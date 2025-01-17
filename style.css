@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+#task-form {
+    background-color: #62f2ff;
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow:5px 5px 5px 5px rgba(54, 229, 223, 0.4);
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form input, form textarea, form select, form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #88df88;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #8ea48e;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.task-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item .task-info {
+    flex: 1;
+}
+
+.task-item button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.task-item button:hover {
+    background-color: #c9302c;
+}
+#task-list, #completed-task-list {
+    background-color: rgb(22, 234, 174);
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(53, 231, 169, 0.4);
+}
+
+.deadline-alert {
+    background-color: #d31212;
+}
+
+.completed-task {
+    text-decoration: line-through;
+    color: white;
+}
+
+.work {
+    background-color: #e9ecef;
+}
+
+.personal {
+    background-color: #fff3cd;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+@media (max-width: 768px) {
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form input, form textarea, form select, form button {
+        font-size: 14px;
+    }
+}
+
+.task-item {
+    background-color: #fff; 
+}
+
+.task-item.high-priority {
+    background-color: #ff5100; 
+}
+
+.task-item.medium-priority {
+    background-color: #ffff00; 
+}
+
+.task-item.low-priority {
+    background-color: #00ff00; 
+}
